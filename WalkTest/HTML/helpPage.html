@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!--<meta name="viewport" content="width=device-width" />-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Help - WalkTest</title>
+</head>
+
+<body>
+
+<p>The WalkTest app runs a 2 or 6 minute walk test (WT), where a person walks back and forth on a straight track of set length for 2 or 6 minutes and the total distance walked is calculated. This app enhances the WT by including biomechanical measures from the phone`s sensors. </p>
+<ul>
+    <li><a href="#APP">App Home Screen</a></li>
+    <li><a href="#BEFORE">Before Running the App</a></li>
+    <!--<li><a href="#CALIBRATE">Calibrating the sensors</a></li>-->
+    <li><a href="#INSTRUCTIONS">Instructions</a></li>
+    <li><a href="#OUTPUTS">Output Files </a></li>
+    <!--<li><a href="#FEATURES">Features</a></li>-->
+    <!--<li><a href="#Videorecord">Video recording notice</a></li>-->
+    <li><a href="#OUTPUT"> Outputs </a></li>
+    <li><a href="#SETTINGS">Settings </a></li>
+    <li><a href="#LOADING">Loading Data Files </a></li>
+    <li><a href="#NOTES">Notes</a></li>
+
+</ul>
+<p>&nbsp;</p>
+<hr></hr>
+
+<a name="APP"></a>
+<CENTER><IMG src="WTHomeScreenLayout.jpg" alt="Labelled Home Screen" width="350" height="600"></CENTER>
+
+<ol>
+    <li> Title Bar: displays the app name on the left and buttons on the right</li>
+    <li> Select File Button: allows you to access previously collected Test Data and Raw Data files to display the results.</li>
+    <li> Display Results Button: allows you to display the results of the most recently selected WT.</li>
+    <li> Settings Button: allows you to modify additional settings</li>
+    <li> Options Button: provides access to the About Page and the Help Page</li>
+    <li> Total Distance: displays the total calculated walking distance, rounded to the nearest metre.<b>This will display a timer before a test is started and while the test is being conducted.</b></li>
+    <li> Slider: slide this to the right to start the WT, and to the left to end the WT before the full time has elapsed.</li>
+    <li> Test Selection: a dropdown menu that will allow you to choose either 2 or 6 minute test duration.</li>
+    <li> Walkway Length: clicking here will allow you to enter a number in metres representing the walkway length.</li>
+    <li> Walk File Path: displays the file's path on the phone.</li>
+</ol>
+
+<h3><a name="BEFORE">Before Running the App:</a></h3>
+
+<p>Layout a walkway, with visible start and end point, and measure the walkway length. Have the person stand at the start point, facing along the walkway.</p>
+
+<h3><a name="INSTRUCTIONS">Instructions:</a></h3>
+
+<ol>
+	<li>Open the app.</li>
+	<li>Select either the 2 or 6 minute test duration from dropdown menu (default is 2 minutes).</li>
+	<li>Enter the walkway length in metres (default is 25 metres). It is important to know the distance between the start and turn points since the app uses this distance to calculate step length and total distance walked.</li>
+	<li>Start the test by sliding the horizontal slider to the right.</li>
+	<li>Place the phone in the holster, at the centre of the lower back, <b>with the phone's screen facing outward.</b> The phone's location and orientation is important since the methods for determining right or left steps, turns, and statistics are based on the phone on the back of a person's pelvis with the screen facing outwards.</li>
+	<li>Wait for the phone to beep, indicating the start, and then walk.</li>
+	<li>Walk back and forth on the straight track until you hear another beep. At the second beep, the sensors stop collecting data.</li>
+    <li>To display the results, choose "Display Results" button in the Title Bar (at the top of the home screen).</li>
+</ol>
+
+<CENTER><IMG src="20150706_101533.jpg" alt="How to wear the smartphone in a holster" width="175" height="304"></CENTER>
+
+<h3><a name="OUTPUTS">Output Files:</a></h3>
+
+<ul>
+	<li>.txt file containing the distance, step count, and other results (related to pelvis orientation and stride parameters) from the walk test</li>
+	<li>.txt file containing sensor data collected during the walk test. "Log Raw Data" must be selected in Settings</li>
+</ul>
+
+<h3><a name= "OUTPUT">Outputs:</a></h3>
+
+<ul>
+    <li><b>Steps: </b>number of steps in each walkway (time from foot strike on one side to foot strike on opposite side).</li>
+    <li><b>Speed(m/s): </b>walkway length divided by time taken to complete each walkway.</li>
+    <li><b>Step Length(m):</b> average distance covered in a single step (walkway length divided by number of steps).</li>
+    <li><b>Cadence(steps/min):</b> number of steps per minute for each walkway.</li>
+    <li><b>Max ML(m/s<sup>2</sup>):</b> maximum mediolateral acceleration (side to side motion while walking).</li>
+    <li><b>Left Avg(m/s<sup>2</sup>):</b> average and standard deviation for mediolateral acceleration to the left side.</li>
+    <li><b>Right Avg(m/s<sup>2</sup>):</b> average and standard deviation for mediolateral acceleration to the right side.</li>
+    <li><b>Max AP(m/s<sup>2</sup>): </b>maximum anterior posterior acceleration (forward and backward motion while walking).</li>
+    <li><b>AP Avg(m/s<sup>2</sup>):</b> average and standard deviation for anterior posterior acceleration in each walkway.</li>
+    <li><b>Avg Tilt(deg):</b> average and standard deviation for angular pelvis movement around the smartphone x-axis.</li>
+    <li><b>Avg Rotation(deg):</b> average and standard deviation for angular pelvis movement around the smartphone y-axis.</li>
+    <li><b>Avg Obliquity(deg):</b> average and standard deviation for angular pelvis movement around the smartphone z-axis.</li>
+    <li><b>Avg Asymmetry:</b> average step time asymmetry for each walkway (difference between left and right step time, divided by the average step time, for each stride).</li>
+</ul>
+
+<CENTER><IMG src="phone_axes.jpg" alt="Smartphone axis" width="150" height="204"></CENTER>
+
+<h3><a name="SETTINGS">Settings:</a></h3>
+
+<ul>
+    <li><b>User Name: </b>Type in a text to identify the person. This could be an identifying number or the person's name. This information is saved in the Test Data file as "2 Minute Walk Test Results: User Name".</li>
+    <li><b>Walkway Time: </b>Select either 2 or 6 minute test duration here as well.</li>
+    <li><b>Walkway Length: </b>Type in the walkway length in metres.</li>
+    <li><b>Log Raw Data: </b>Select or deselect the checkbox to turn this option on or off. If turned on, a second .txt file will be created and saved in the RAWDATA subfolder containing the raw data from the sensors.</li>
+    <li><b>Raw Data File Name: </b>If "Log Raw Data" is selected, you can type in a name to save the file as. If you do not, the default file name will be "RAW_DATA_date_time.txt".</li>
+</ul>
+
+<h3><a name="LOADING">Loading Data Files:</a></h3>
+
+<p>To see results from previously collected Test Data, click the "Select File" button in the Title Bar. A dialog will be created displaying the subfolder options. Choose "TEST DATA" from the list. Another dialog will be created displaying all of the Test Data files saved to this subfolder. The file names are created in the following format "TEST_DATA_date_time.txt". Choose the file with the correct date and time. Upon selection, you can view the tables and graph created from the walk test results.</p>
+<p>To see the results created from previously collected Raw Data, follow the same steps as above except choose the "RAW DATA" subfolder instead. The next dialog will display all of the raw data files created with either the default names or the names you have created. Upon selection, you can view the results as well.</p>
+<p>The file path of the .txt files (Raw or Test Data) can be seen at the bottom of the home screen by "Walk File Path:".</p>
+
+<hr></hr>
+
+<h3><a name="NOTES">Notes:</a></h3>
+
+<ul>
+    <li>The Android device will not automatically go into sleep mode while this application is running. It is important to not put the device to sleep manually while conducting a walk test since this can cause unexpected behaviour.</li>
+    <li>The person needs to complete at least one walkway (i.e. walk, turn, and start walking back) for the app to work since we use number of steps and walkway length to calculate an average step length and final distance. <b>The average, maximum, and minimum number of steps is calculated based on only the completed walkways.</b></li>
+    <li>The acceleration and pelvis parameters are only reported if at least a full stride is completed in the walkway. </li>
+    <li>Files are saved in a WALKTEST folder, in either RAWDATA or TESTDATA subfolders</li>
+</ul>
+
+</body>
+</html>

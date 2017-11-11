@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Loaded by SecondViewController"; ObjectID = "NDk-cv-Gan"; */
+"NDk-cv-Gan.text" = "Loaded by SecondViewController";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "WIY-wF-rIU"; */
+"WIY-wF-rIU.title" = "Settings";
+
+/* Class = "UITextField"; placeholder = "25"; ObjectID = "YRe-cp-h8e"; */
+"YRe-cp-h8e.placeholder" = "25";
+
+/* Class = "UITabBarItem"; title = "home"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "home";
+
+/* Class = "UITabBarItem"; title = "Results"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Results";
+
+/* Class = "UILabel"; text = "00:00"; ObjectID = "wUr-lz-ZE3"; */
+"wUr-lz-ZE3.text" = "00:00";
+
+/* Class = "UILabel"; text = "Walkway Length (m):"; ObjectID = "yCI-KU-o3v"; */
+"yCI-KU-o3v.text" = "Walkway Length (m):";
+
+/* Class = "UILabel"; text = "Walk File Path:"; ObjectID = "yGc-K5-ydC"; */
+"yGc-K5-ydC.text" = "Walk File Path:";
+
+/* Class = "UILabel"; text = "Second View"; ObjectID = "zEq-FU-wV5"; */
+"zEq-FU-wV5.text" = "Second View";
