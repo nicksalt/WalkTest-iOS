@@ -8,24 +8,66 @@
 
 import UIKit
 
-class SettingsTableViewController: UITableViewController {
+class SettingsTableViewController: UITableViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "cell"
     
-    let numberOfRowsAtSection: [Int] = [7, 5, 2, 1]
+    let numberOfRowsAtSection: [Int] = [6, 6, 2, 1]
+    let genders = ["Male", "Female"]
+    let heightUnits = ["in", "cm"]
+    let weightUnits = ["lbs", "kg"]
 
+    @IBOutlet weak var genderTextField: UITextField!
+    @IBOutlet weak var heightUnitTextField: UITextField!
+    @IBOutlet weak var weightUnitTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // This view controller itself will provide the delegate methods and row data for the table view.
         tableView.delegate = self
         tableView.dataSource = self
+        
+        //Looks for single or multiple taps.
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
+        
+        let genderPickerView = UIPickerView()
+        
+        genderPickerView.delegate = self
+        
+        genderPickerView.tag = 1
+        
+        genderTextField.inputView = genderPickerView
+        genderTextField.text = genders[0]
+        
+        let heightPickerView = UIPickerView()
+        
+        heightPickerView.delegate = self
+        
+        heightPickerView.tag = 2
+        
+        heightUnitTextField.inputView = heightPickerView
+        heightUnitTextField.text = heightUnits[0]
+
+        let weightPickerView = UIPickerView()
+        
+        weightPickerView.delegate = self
+        
+        weightPickerView.tag = 3
+        
+        weightUnitTextField.inputView = weightPickerView
+        weightUnitTextField.text = weightUnits[0]
+
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
     // MARK: - Table view data source
 
@@ -43,51 +85,77 @@ class SettingsTableViewController: UITableViewController {
         return rows
     }
     
+    func numberOfComponents(in _: UIPickerView) -> Int {
+        return 1
+    }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        if pickerView.tag == 1 {
+            
+            return genders.count
+            
+        }
+        
+        if pickerView.tag == 2 {
+            
+            return heightUnits.count
+            
+        }
+        
+        if pickerView.tag == 3 {
+            
+            return weightUnits.count;
+        }
+        
+        return 0
+        
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        if pickerView.tag == 1 {
+            
+            return genders[row]
+            
+        }
+        
+        if pickerView.tag == 2 {
+            
+            return heightUnits[row]
+            
+        }
+        if pickerView.tag == 3 {
+            
+            return weightUnits[row]
+            
+        }
+        
+        return nil
+        
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        if pickerView.tag == 1 {
+            
+            genderTextField.text = genders[row]
+            
+        }
+        
+        if pickerView.tag == 2 {
+            
+            heightUnitTextField.text = heightUnits[row]
+            
+        }
+        
+        if pickerView.tag == 2 {
+            
+            weightUnitTextField.text = weightUnits[row]
+            
+        }
     }
-    */
 
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }

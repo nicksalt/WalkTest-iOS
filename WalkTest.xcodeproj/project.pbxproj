@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		016E55DF1FDD21EE00C3063A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016E55DE1FDD21EE00C3063A /* AboutViewController.swift */; };
+		016E55E31FDDD4C000C3063A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016E55E21FDDD4C000C3063A /* AboutViewController.swift */; };
 		7A948B081F3E1F48002C476E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A948B071F3E1F48002C476E /* AppDelegate.swift */; };
 		7A948B0A1F3E1F48002C476E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A948B091F3E1F48002C476E /* MainViewController.swift */; };
 		7A948B0F1F3E1F48002C476E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A948B0D1F3E1F48002C476E /* Main.storyboard */; };
@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		016E55DE1FDD21EE00C3063A /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = ../AboutViewController.swift; sourceTree = "<group>"; };
+		016E55E21FDDD4C000C3063A /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		7A948B041F3E1F48002C476E /* WalkTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A948B071F3E1F48002C476E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A948B091F3E1F48002C476E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -86,7 +86,6 @@
 		7A948B061F3E1F48002C476E /* WalkTest */ = {
 			isa = PBXGroup;
 			children = (
-				016E55DE1FDD21EE00C3063A /* AboutViewController.swift */,
 				7ADC1C261F423402008BDE83 /* HTML */,
 				7A948B071F3E1F48002C476E /* AppDelegate.swift */,
 				7A948B091F3E1F48002C476E /* MainViewController.swift */,
@@ -96,6 +95,7 @@
 				7A948B151F3E1F48002C476E /* Info.plist */,
 				7AB208D91F4200D00024229E /* SettingsTableViewController.swift */,
 				7ADC1C281F423495008BDE83 /* HelpViewController.swift */,
+				016E55E21FDDD4C000C3063A /* AboutViewController.swift */,
 			);
 			path = WalkTest;
 			sourceTree = "<group>";
@@ -159,6 +159,7 @@
 				TargetAttributes = {
 					7A948B031F3E1F48002C476E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XL2QLB663K;
 						ProvisioningStyle = Automatic;
 					};
 					7A948B191F3E1F48002C476E = {
@@ -216,7 +217,7 @@
 				7AB208DA1F4200D00024229E /* SettingsTableViewController.swift in Sources */,
 				7A948B081F3E1F48002C476E /* AppDelegate.swift in Sources */,
 				7A948B0A1F3E1F48002C476E /* MainViewController.swift in Sources */,
-				016E55DF1FDD21EE00C3063A /* AboutViewController.swift in Sources */,
+				016E55E31FDDD4C000C3063A /* AboutViewController.swift in Sources */,
 				7ADC1C291F423495008BDE83 /* HelpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,12 +358,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XL2QLB663K;
 				INFOPLIST_FILE = WalkTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.irrd.WalkTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -370,12 +373,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XL2QLB663K;
 				INFOPLIST_FILE = WalkTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.irrd.WalkTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
