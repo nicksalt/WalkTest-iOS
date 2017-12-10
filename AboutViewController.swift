@@ -1,19 +1,22 @@
 //
-//  HelpViewController.swift
+//  AboutViewController.swift
 //  WalkTest
 //
-//  Created by Nick Salt on 2017-08-14.
+//  Created by Nick Salt on 2017-12-10.
 //  Copyright © 2017 OHRI. All rights reserved.
 //
 
 import UIKit
 
-class HelpViewController: UIViewController {
+class AboutViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = Bundle.main.url(forResource: "HTML/helpPage", withExtension: "html")
+
+        // Do any additional setup after loading the view.
+        let url = Bundle.main.url(forResource: "HTML/aboutPage", withExtension: "html")
         let request = URLRequest(url: url!)
         webView.loadRequest(request)
     }
