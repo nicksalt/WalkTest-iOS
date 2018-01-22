@@ -17,6 +17,19 @@
 		7AB208DA1F4200D00024229E /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB208D91F4200D00024229E /* SettingsTableViewController.swift */; };
 		7ADC1C271F423402008BDE83 /* HTML in Resources */ = {isa = PBXBuildFile; fileRef = 7ADC1C261F423402008BDE83 /* HTML */; };
 		7ADC1C291F423495008BDE83 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC1C281F423495008BDE83 /* HelpViewController.swift */; };
+		FB9E2337201540AC00CB83DE /* CommonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9E2336201540AC00CB83DE /* CommonData.swift */; };
+		FB9E233920154A6800CB83DE /* FloatBoxing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9E233820154A6800CB83DE /* FloatBoxing.swift */; };
+		FB9E233B20154AAC00CB83DE /* LeftSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9E233A20154AAC00CB83DE /* LeftSteps.swift */; };
+		FB9E233D20154D3700CB83DE /* RightSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9E233C20154D3700CB83DE /* RightSteps.swift */; };
+		FB9E233F20154E2F00CB83DE /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9E233E20154E2F00CB83DE /* UserInfo.swift */; };
+		FB9E2341201552A800CB83DE /* Walkway.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9E2340201552A800CB83DE /* Walkway.swift */; };
+		FB9E23452015531900CB83DE /* LoadDataFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9E23442015531900CB83DE /* LoadDataFunction.swift */; };
+		FB9E23472015532900CB83DE /* MainFunctionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9E23462015532900CB83DE /* MainFunctionTask.swift */; };
+		FB9E23492015532E00CB83DE /* SaveRawDataFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9E23482015532E00CB83DE /* SaveRawDataFunction.swift */; };
+		FB9E234B2015535800CB83DE /* StepsWalkFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9E234A2015535800CB83DE /* StepsWalkFunction.swift */; };
+		FB9E234E2015538A00CB83DE /* MainHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9E234D2015538A00CB83DE /* MainHandler.swift */; };
+		FB9E2350201553A000CB83DE /* SensorDataRunnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9E234F201553A000CB83DE /* SensorDataRunnable.swift */; };
+		FB9E2352201553AE00CB83DE /* TimeRunnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9E2351201553AE00CB83DE /* TimeRunnable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +58,19 @@
 		7AB208D91F4200D00024229E /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		7ADC1C261F423402008BDE83 /* HTML */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HTML; sourceTree = "<group>"; };
 		7ADC1C281F423495008BDE83 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		FB9E2336201540AC00CB83DE /* CommonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonData.swift; sourceTree = "<group>"; };
+		FB9E233820154A6800CB83DE /* FloatBoxing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatBoxing.swift; sourceTree = "<group>"; };
+		FB9E233A20154AAC00CB83DE /* LeftSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSteps.swift; sourceTree = "<group>"; };
+		FB9E233C20154D3700CB83DE /* RightSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSteps.swift; sourceTree = "<group>"; };
+		FB9E233E20154E2F00CB83DE /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		FB9E2340201552A800CB83DE /* Walkway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walkway.swift; sourceTree = "<group>"; };
+		FB9E23442015531900CB83DE /* LoadDataFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataFunction.swift; sourceTree = "<group>"; };
+		FB9E23462015532900CB83DE /* MainFunctionTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFunctionTask.swift; sourceTree = "<group>"; };
+		FB9E23482015532E00CB83DE /* SaveRawDataFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveRawDataFunction.swift; sourceTree = "<group>"; };
+		FB9E234A2015535800CB83DE /* StepsWalkFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWalkFunction.swift; sourceTree = "<group>"; };
+		FB9E234D2015538A00CB83DE /* MainHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHandler.swift; sourceTree = "<group>"; };
+		FB9E234F201553A000CB83DE /* SensorDataRunnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataRunnable.swift; sourceTree = "<group>"; };
+		FB9E2351201553AE00CB83DE /* TimeRunnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRunnable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,16 +112,16 @@
 		7A948B061F3E1F48002C476E /* WalkTest */ = {
 			isa = PBXGroup;
 			children = (
+				FB9E23432015530800CB83DE /* Threads */,
+				FB9E2342201552FE00CB83DE /* Functions */,
+				FB9E23352015401700CB83DE /* ViewControllers */,
+				FB9E233320153F4500CB83DE /* Data */,
 				7ADC1C261F423402008BDE83 /* HTML */,
 				7A948B071F3E1F48002C476E /* AppDelegate.swift */,
-				7A948B091F3E1F48002C476E /* MainViewController.swift */,
 				7A948B0D1F3E1F48002C476E /* Main.storyboard */,
 				7A948B101F3E1F48002C476E /* Assets.xcassets */,
 				7A948B121F3E1F48002C476E /* LaunchScreen.storyboard */,
 				7A948B151F3E1F48002C476E /* Info.plist */,
-				7AB208D91F4200D00024229E /* SettingsTableViewController.swift */,
-				7ADC1C281F423495008BDE83 /* HelpViewController.swift */,
-				016E55E21FDDD4C000C3063A /* AboutViewController.swift */,
 			);
 			path = WalkTest;
 			sourceTree = "<group>";
@@ -107,6 +133,51 @@
 				7A948B201F3E1F48002C476E /* Info.plist */,
 			);
 			path = WalkTestTests;
+			sourceTree = "<group>";
+		};
+		FB9E233320153F4500CB83DE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FB9E2336201540AC00CB83DE /* CommonData.swift */,
+				FB9E233820154A6800CB83DE /* FloatBoxing.swift */,
+				FB9E233A20154AAC00CB83DE /* LeftSteps.swift */,
+				FB9E233C20154D3700CB83DE /* RightSteps.swift */,
+				FB9E233E20154E2F00CB83DE /* UserInfo.swift */,
+				FB9E2340201552A800CB83DE /* Walkway.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FB9E23352015401700CB83DE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A948B091F3E1F48002C476E /* MainViewController.swift */,
+				7AB208D91F4200D00024229E /* SettingsTableViewController.swift */,
+				7ADC1C281F423495008BDE83 /* HelpViewController.swift */,
+				016E55E21FDDD4C000C3063A /* AboutViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB9E2342201552FE00CB83DE /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				FB9E23442015531900CB83DE /* LoadDataFunction.swift */,
+				FB9E23462015532900CB83DE /* MainFunctionTask.swift */,
+				FB9E23482015532E00CB83DE /* SaveRawDataFunction.swift */,
+				FB9E234A2015535800CB83DE /* StepsWalkFunction.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		FB9E23432015530800CB83DE /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				FB9E234D2015538A00CB83DE /* MainHandler.swift */,
+				FB9E234F201553A000CB83DE /* SensorDataRunnable.swift */,
+				FB9E2351201553AE00CB83DE /* TimeRunnable.swift */,
+			);
+			path = Threads;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,11 +285,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9E2341201552A800CB83DE /* Walkway.swift in Sources */,
+				FB9E23452015531900CB83DE /* LoadDataFunction.swift in Sources */,
 				7AB208DA1F4200D00024229E /* SettingsTableViewController.swift in Sources */,
+				FB9E234B2015535800CB83DE /* StepsWalkFunction.swift in Sources */,
+				FB9E233920154A6800CB83DE /* FloatBoxing.swift in Sources */,
 				7A948B081F3E1F48002C476E /* AppDelegate.swift in Sources */,
+				FB9E233D20154D3700CB83DE /* RightSteps.swift in Sources */,
+				FB9E23472015532900CB83DE /* MainFunctionTask.swift in Sources */,
+				FB9E2350201553A000CB83DE /* SensorDataRunnable.swift in Sources */,
+				FB9E2337201540AC00CB83DE /* CommonData.swift in Sources */,
+				FB9E233B20154AAC00CB83DE /* LeftSteps.swift in Sources */,
+				FB9E2352201553AE00CB83DE /* TimeRunnable.swift in Sources */,
+				FB9E23492015532E00CB83DE /* SaveRawDataFunction.swift in Sources */,
 				7A948B0A1F3E1F48002C476E /* MainViewController.swift in Sources */,
 				016E55E31FDDD4C000C3063A /* AboutViewController.swift in Sources */,
+				FB9E233F20154E2F00CB83DE /* UserInfo.swift in Sources */,
 				7ADC1C291F423495008BDE83 /* HelpViewController.swift in Sources */,
+				FB9E234E2015538A00CB83DE /* MainHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
